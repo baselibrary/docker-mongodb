@@ -2,7 +2,7 @@ FROM baselibrary/baseimage:1.0.0
 MAINTAINER ShawnMa <qsma@thoughtworks.com>
 
 ENV MONGODB_MAJOR   3.0
-ENV MONGODB_VERSION 3.0.7
+ENV MONGODB_VERSION 3.0.8
 
 ## Add repository
 RUN \
@@ -23,7 +23,7 @@ EXPOSE 27017 28017
 
 VOLUME ["/data/db"]
 
-ENTRYPOINT ["tini", "--", "/docker-entrypoint.sh"]
+ENTRYPOINT ["/docker-entrypoint.sh"]
 
 CMD ["mongod"]
 

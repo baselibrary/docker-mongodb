@@ -23,7 +23,7 @@ EXPOSE 27017 28017
 
 VOLUME ["/data/db"]
 
-ENTRYPOINT ["tini", "--", "/docker-entrypoint.sh"]
+ENTRYPOINT ["/docker-entrypoint.sh"]
 
 CMD ["mongod"]
 
