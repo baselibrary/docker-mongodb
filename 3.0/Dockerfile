@@ -2,7 +2,7 @@ FROM baselibrary/baseimage:1.0.0
 MAINTAINER ShawnMa <qsma@thoughtworks.com>
 
 ENV MONGODB_MAJOR   3.0
-ENV MONGODB_VERSION 3.0.8
+ENV MONGODB_VERSION 3.0.10
 
 ## Add repository
 RUN \
