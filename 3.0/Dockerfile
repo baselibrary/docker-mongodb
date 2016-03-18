@@ -15,10 +15,6 @@ RUN \
   apt-get install -y mongodb-org=$MONGODB_VERSION python-pymongo &&\
   rm -rf /var/lib/apt/lists/*
 
-## Install scripts
-ADD docker-entrypoint.sh /docker-entrypoint.sh
-RUN chmod a+x            /docker-entrypoint.sh
-
 EXPOSE 27017 28017
 
 VOLUME ["/data/db"]
